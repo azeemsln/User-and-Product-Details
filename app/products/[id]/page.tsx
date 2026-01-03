@@ -42,7 +42,7 @@ export default function ProductDetail({
           {product.images && (
             <Box
               component="img"
-              src={product.images}
+              src={product.images?.[0]}
               alt={product.title}
               sx={{
                 width: "100%",

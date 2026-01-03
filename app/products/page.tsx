@@ -156,7 +156,7 @@ export default function ProductsPage() {
           {p.images && (
             <Box
               component="img"
-              src={p.images}
+              src={p.images?.[0]}
               alt={p.title}
               sx={{
                 width: "100%",
